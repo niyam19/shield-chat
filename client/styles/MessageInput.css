@@ -1,0 +1,56 @@
+.message-input {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #141829;
+    border: 1px solid #2a3052;
+    border-radius: 8px;
+    border-top: 2px solid #3d4572;
+}
+
+.send-message-button {
+    padding: 0.5rem !important;
+    color: #e0e6f5 !important;
+    transition: all 0.2s ease !important;
+    flex-shrink: 0;
+}
+
+.send-message-button:hover {
+    color: #3d4572 !important;
+    transform: scale(1.1) !important;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.file-upload label {
+    color: #e0e6f5;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-upload label:hover {
+    color: #3d4572;
+    transform: scale(1.1);
+}
+
+.file-upload input {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .message-input {
+        width: 100%;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+}

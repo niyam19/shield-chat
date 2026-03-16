@@ -1,0 +1,73 @@
+.home-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #0a0e27 0%, #141829 100%);
+}
+
+.login {
+  width: 100%;
+  max-width: 450px;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(135deg, #141829 0%, #1a1f3a 100%);
+  border-radius: 12px;
+  border: 1px solid #2a3052;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login h2 {
+  text-align: center;
+  color: #e0e6f5;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.chat {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 64px);
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-container {
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .login {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .login h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .chat {
+    padding: 0.5rem;
+    min-height: auto;
+    flex-wrap: wrap;
+  }
+}

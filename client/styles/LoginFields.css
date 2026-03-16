@@ -1,0 +1,55 @@
+.login-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.username-container {
+    width: 100%;
+}
+
+.room-input {
+    width: 100%;
+}
+
+.login-fields h3 {
+    text-align: center;
+    color: #e0e6f5;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.room-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-direction: column;
+}
+
+.room-buttons button {
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    background: linear-gradient(135deg, #3d4572 0%, #4e5a8a 100%) !important;
+    color: #e0e6f5 !important;
+    border: none !important;
+}
+
+.room-buttons button:hover {
+    background: linear-gradient(135deg, #4e5a8a 0%, #5f6b9c 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(61, 69, 114, 0.4) !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    .login-fields {
+        gap: 1rem;
+    }
+
+    .room-buttons {
+        margin-top: 1rem;
+        gap: 0.75rem;
+    }
+}

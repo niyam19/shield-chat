@@ -1,0 +1,79 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.user {
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #b0b8d4;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.text {
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    max-width: fit-content;
+    word-break: break-word;
+}
+
+.timestamp {
+    font-size: 0.7rem;
+    color: #8892ac;
+}
+
+#you {
+    align-items: flex-end;
+    padding-right: 0;
+}
+
+#you .user,
+#you .timestamp {
+    text-align: end;
+    align-self: flex-end;
+}
+
+#you .text {
+    background-color: #3d4572;
+    color: #e0e6f5;
+    border-bottom-right-radius: 2px;
+}
+
+#other {
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+#other .user,
+#other .timestamp {
+    text-align: start;
+    align-self: flex-start;
+}
+
+#other .text {
+    background-color: #1a1f3a;
+    color: #e0e6f5;
+    border: 1px solid #2a3052;
+    border-bottom-left-radius: 2px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .text {
+        font-size: 0.9rem;
+        padding: 0.65rem 0.85rem;
+    }
+
+    .user {
+        font-size: 0.7rem;
+    }
+
+    .timestamp {
+        font-size: 0.65rem;
+    }
+}
